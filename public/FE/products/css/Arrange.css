@@ -1,0 +1,50 @@
+.sorter{
+    margin-left: 1030px;
+}
+.sorter-options {
+        width: 50px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: #e3e6f3;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        color: #333;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 8px 30px 8px 10px;
+        width: 200px;
+        text-align: left;
+        
+        /* Tạo mũi tên custom */
+        background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        background-size: 16px;
+    }
+
+    .sorter-options:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+    }
+
+    .sorter-options option {
+        background-color: #fff;
+        color: #333;
+        padding: 8px;
+    }
+
+    .sorter-options option:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Đối với Firefox */
+    .sorter-options {
+        -moz-padding-start: calc(10px - 3px);
+    }
+
+    .sorter-options:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+}
